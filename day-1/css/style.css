@@ -209,6 +209,7 @@ main{
     }
 
 
+
     /* OTHER OPTION */
     .navbar .other-option li:first-child{
         opacity:0.5;
@@ -217,7 +218,6 @@ main{
         display:block;
         margin-left:15px;
     }
-
 
 }
 
