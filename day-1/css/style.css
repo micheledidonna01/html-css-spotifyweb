@@ -7,3 +7,99 @@ COMMAND
     box-sizing: border-box;
     font-family: Montserrat, 'Helvetica Neue', sans-serif;
 }
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+.d-flex{
+    display:flex;
+}
+
+.d-none{
+    display:none;
+}
+
+a{
+    text-decoration:none;
+}
+
+/***************
+ CONTAINER MENU/MAIN
+***************/
+
+.container{
+    flex-direction: row;
+}
+
+
+/***************
+ MENU
+***************/
+
+.navbar{
+    height: calc(100vh - 90px);
+    background-color:#000000;
+    align-items:center;
+    flex-direction:column;
+    padding-top:13px;
+
+}
+
+.navbar .logo-small{
+    width: 28px;
+    margin-bottom:28px;
+}
+
+.navbar ul {
+    list-style-type:none;
+    flex-direction:column;
+    gap:12px;
+}
+
+.navbar ul li{
+    border-left:2px solid transparent;
+    padding:0 15px;
+}
+.navbar ul li:hover{
+    border-left:2px solid #B5F843;
+}
+
+.navbar ul li a{
+    opacity:0.4;
+}
+
+.navbar ul li a img{
+    width:25px;
+    
+}
+
+
+
+
+
+/***************
+ MAIN
+***************/
+
+main{
+    width:100%;
+    background-color:#151922;
+}
+
+
+
+/***************
+ PLAY BAR
+ ***************/
+
+.play-bar{
+    height: 90px;
+    background-color:#282828;
+}
+
+
+
+
+
