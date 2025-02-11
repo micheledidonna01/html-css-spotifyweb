@@ -103,3 +103,55 @@ main{
 
 
 
+/***************
+****************
+ DESKTOP
+****************
+***************/
+
+@media screen and (min-width:992px){
+    /***************
+    MENU
+    ***************/
+    .container .navbar .logo-small{
+        display:none;
+    }
+
+    .container .navbar{
+        width:456px;
+        padding:27px 24px;
+        align-items:flex-start;
+    }
+
+    .container .navbar .logo{
+        display:block;
+        width:362px;
+        margin-bottom:30px;
+    }
+
+    .navbar ul li a{
+        font-size:20px;
+        color:#FFFFFF;
+    }
+
+    .navbar ul li a img{
+        width:40px;
+        vertical-align:middle;
+    }
+
+    .navbar ul li a .d-none{
+        display:inline;
+        vertical-align:middle;
+        margin-left:25px;
+    }
+
+    .navbar ul li{
+        border-left:0px;
+        padding:0 15px;
+    }
+    .navbar ul li:hover{
+        border-left:0px;
+    }
+
+}
+
