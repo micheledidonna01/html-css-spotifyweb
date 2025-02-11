@@ -43,7 +43,7 @@ a{
     background-color:#000000;
     align-items:center;
     flex-direction:column;
-    padding-top:13px;
+    padding:13px 0 20px;
 
 }
 
@@ -57,7 +57,7 @@ a{
 .navbar ul {
     list-style-type:none;
     flex-direction:column;
-    gap:12px;
+    gap:10px;
 
 }
 
@@ -83,7 +83,6 @@ a{
     height:100%;
     flex-direction:column;
     justify-content:flex-end;
-    padding-bottom:20px;
 }
 
 .mod-img{
@@ -103,6 +102,10 @@ main{
     background-color:#151922;
 }
 
+main .header-main{
+    height:90px;
+    background-color:#0E131B;
+}
 
 
 /***************
@@ -147,24 +150,24 @@ main{
     }
 
     /* OPZIONI MENU */
-    .navbar ul{
+    .navbar ul.option-menu{
         margin-bottom:40px;
     }
 
     .navbar ul li a{
-        font-size:20px;
+        font-size:16px;
         color:#FFFFFF;
     }
 
     .navbar ul li a img{
-        width:40px;
+        width:30px;
         vertical-align:middle;
     }
 
     .navbar ul li a .d-none{
         display:inline;
         vertical-align:middle;
-        margin-left:25px;
+        margin-left:20px;
     }
 
     .navbar ul li{
@@ -201,7 +204,7 @@ main{
         display:flex;
         justify-content:center;
         align-items:center;
-        font-size:30px;
+        font-size:20px;
     }
 
     .navbar .playlist li a:hover{
@@ -211,13 +214,23 @@ main{
 
 
     /* OTHER OPTION */
+
+
     .navbar .other-option li:first-child{
         opacity:0.5;
     }
     hr.d-none{
-        display:block;
+        display:inline-block;
         margin-left:15px;
     }
 
+
+    /***************
+    MAIN
+    ***************/
+
+    main .header-main{
+        height:180px;
+    }
 }
 
