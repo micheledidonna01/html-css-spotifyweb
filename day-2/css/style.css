@@ -220,9 +220,20 @@ main .container-music .albums .album img{
 
 main .container-music .title-recently > p{
     opacity:0.4;
-    font-size:8px;
+    font-size:10px;
 }
+
 /* /create for you */
+
+
+
+/* popular artists */
+
+main .container-music .title-recently .albums .album .circle{
+    border-radius:50%;
+}
+/* /popular artists */
+
 
 /***************
  PLAY BAR
@@ -317,6 +328,7 @@ main .container-music .title-recently > p{
         display:flex;
         justify-content:center;
         align-items:center;
+        font-size:25px;
        
     }
 
