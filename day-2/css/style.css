@@ -1,0 +1,238 @@
+/***************
+COMMAND
+***************/
+* {  
+    margin: 0;  
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: Montserrat, 'Helvetica Neue', sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+.d-flex{
+    display:flex;
+}
+
+.d-none{
+    display:none;
+}
+
+a{
+    text-decoration:none;
+}
+
+/***************
+ CONTAINER MENU/MAIN
+***************/
+
+.container{
+    flex-direction: row;
+}
+
+
+/***************
+ MENU
+***************/
+
+.navbar{
+    height: calc(100vh - 90px);
+    background-color:#000000;
+    align-items:center;
+    flex-direction:column;
+    padding:13px 0 20px;
+    flex-shrink:0;
+
+}
+
+/* LOGO */
+.navbar .logo-small{
+    width: 28px;
+    margin-bottom:28px;
+}
+
+/* OPZIONI MENU */
+.navbar ul {
+    list-style-type:none;
+    flex-direction:column;
+    gap:10px;
+
+}
+
+.navbar ul li{
+    border-left:2px solid transparent;
+    padding:0 15px;
+}
+.navbar ul li:hover{
+    border-left:2px solid #B5F843;
+}
+
+.navbar ul li a{
+    opacity:0.4;
+}
+
+.navbar ul li a img{
+    width:25px;
+    
+}
+
+/* OTHER OPTION */
+.navbar .other-option{
+    height:100%;
+    flex-direction:column;
+    justify-content:flex-end;
+}
+
+.mod-img{
+    background-color:#666666;
+    border-radius:50%;
+}
+
+
+
+
+/***************
+ MAIN
+***************/
+
+main{
+    width:100%;
+    background-color:#151922;
+    flex-grow:1;
+}
+
+main .header-main{
+    height:90px;
+    background-color:#0E131B;
+}
+
+
+/***************
+ PLAY BAR
+ ***************/
+
+.play-bar{
+    height: 90px;
+    background-color:#282828;
+}
+
+
+
+
+
+/***************
+****************
+ DESKTOP
+****************
+***************/
+
+@media screen and (min-width:992px){
+    /***************
+    MENU
+    ***************/
+
+    .container .navbar{
+        width:270px;
+        padding:27px 24px;
+        align-items:flex-start;
+    }
+
+    /* LOGO */
+    .container .navbar .logo-small{
+        display:none;
+    }
+
+    .container .navbar .logo{
+        display:block;
+        width:130px;
+        margin-bottom:30px;
+    }
+
+    /* OPZIONI MENU */
+    .navbar ul.option-menu{
+        margin-bottom:40px;
+    }
+
+    .navbar ul li a{
+        color:#FFFFFF;
+    }
+
+    .navbar ul li a img{
+        width:30px;
+        vertical-align:middle;
+    }
+
+    .navbar ul li a .d-none{
+        display:inline;
+        vertical-align:middle;
+        margin-left:20px;
+    }
+
+    .navbar ul li{
+        border-left:0px;
+        font-size:12px;
+        padding:0 15px;
+    }
+    .navbar ul li:hover{
+        border-left:0px;
+    }
+
+    /* PLAYLIST */
+    .navbar .playlist{
+        display:flex;
+        flex-direction:col;
+        gap:16px;
+    }
+
+    .navbar .playlist li h3{
+        
+        color:#FFFFFF;
+    }
+
+    .navbar .playlist .big-li{
+        display:flex;
+        align-items:center;
+        gap:15px;
+    }
+
+    .navbar .playlist li span{
+        width:50px;
+        height:50px;
+        background-color: #FFFFFF;
+        opacity: 0.4;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+       
+    }
+
+    .navbar .playlist li a:hover{
+        text-decoration:underline;
+    }
+
+
+
+    /* OTHER OPTION */
+
+
+    .navbar .other-option li:first-child{
+        opacity:0.5;
+    }
+    hr.d-none{
+        display:inline-block;
+        margin-left:15px;
+    }
+
+
+    /***************
+    MAIN
+    ***************/
+
+    main .header-main{
+        height:180px;
+    }
+}
+
