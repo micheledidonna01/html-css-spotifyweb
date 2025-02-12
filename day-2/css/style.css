@@ -193,7 +193,7 @@ main .container-music .albums{
 main .container-music .albums .album{
     flex-direction:column;
     align-items:center;
-    width:calc((100% - 10px) / 2);
+    width:calc(100% / 2);
     margin-top:20px;
 }
 
@@ -367,6 +367,25 @@ main .container-music .albums .album img{
         width:calc(100% / 5);
     }
     /* /menu main */
+
+
+    /* container music  (recently played)  */
+    main .container-music .albums{
+        justify-content:flex-start;
+    } 
+    
+    main .container-music .albums .album img{
+        max-width:120px;
+        max-height:120px;
+    }
+
+    main .container-music .albums .album{
+        flex-direction:column;
+        align-items:center;
+        width:calc(100% / 4);
+        margin-top:20px;
+    }
+    /* / container music  (recently played)  */
 }
 
 
