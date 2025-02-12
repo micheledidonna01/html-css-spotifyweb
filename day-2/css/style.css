@@ -352,6 +352,18 @@ main .menu-main li:hover a div{
     MAIN
     ***************/
 
+    /* menu main */
+
+    main .menu-main{
+        margin:0 auto;
+        max-width: 650px;
+    }
+
+    main .menu-main li{
+        width:calc(100% / 6);
+    }
+    /* /menu main */
+
 
 }
 
