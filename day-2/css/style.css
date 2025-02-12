@@ -426,7 +426,7 @@ main .container-music .title-recently .albums .album .circle{
     /* OPZIONI MENU */
 
     .navbar ul.option-menu li:hover{
-        border-left:0px;
+        border-left:2px solid transparent;
     }
 
     /* PLAYLIST */
