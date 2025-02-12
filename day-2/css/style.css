@@ -288,16 +288,34 @@ main .menu-main li:hover a div{
     MAIN
     ***************/
 
-    main .menu-main li{
-        width:calc(100% / 4);
-    }
-
     /* menu main */
     main .menu-main li{
         width:calc(100% / 3);
     }
     /* /menu main */
 }
+
+
+
+/***************
+****************
+ MEDIUM
+****************
+***************/
+
+@media screen and (min-width:768px){
+    /***************
+    MAIN
+    ***************/
+
+    /* menu main */
+    main .menu-main li{
+        width:calc(100% / 5);
+    }
+    /* /menu main */
+}
+
+
 
 
 /***************
