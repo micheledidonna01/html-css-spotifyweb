@@ -112,6 +112,7 @@ main{
     flex-grow:1;
 }
 
+/* header main */
 main .header-main{
     height:90px;
     background-color:#0E131B;
@@ -127,7 +128,9 @@ main .header-main a{
     padding:10px 20px;
     font-size:10px;
 }
+/* /header main */
 
+/* /menu main */
 main .menu-main{
     justify-content:center;
     padding:0 30px;
@@ -162,6 +165,10 @@ main .menu-main li a div{
 main .menu-main li:hover a div{
     background-color:#ADFF30;
 }
+
+/* /menu main */
+
+
 
 /***************
  PLAY BAR
@@ -281,6 +288,15 @@ main .menu-main li:hover a div{
     MAIN
     ***************/
 
+    main .menu-main li{
+        width:calc(100% / 4);
+    }
+
+    /* menu main */
+    main .menu-main li{
+        width:calc(100% / 3);
+    }
+    /* /menu main */
 }
 
 
