@@ -107,9 +107,11 @@ a{
 ***************/
 
 main{
+    height: calc(100vh - 90px);
     width:100%;
     background-color:#151922;
     flex-grow:1;
+    overflow-y: scroll;
 }
 
 /* header main */
@@ -118,7 +120,7 @@ main .header-main{
     background-color:#0E131B;
     align-items: center;
     justify-content:flex-end;
-    padding:0 4px;
+    padding:0 8px;
 }
 
 main .header-main a{
@@ -133,9 +135,11 @@ main .header-main a{
 /* /menu main */
 main .menu-main{
     justify-content:center;
-    padding:0 30px;
+    padding:0 20px;
     flex-wrap:wrap;
     list-style-type:none;
+    white-space: nowrap;
+    margin-bottom:20px;
 }
 
 main .menu-main li{
@@ -168,6 +172,48 @@ main .menu-main li:hover a div{
 
 /* /menu main */
 
+
+/* container music */
+
+main .container-music{
+    color:#FFFFFF;
+    padding:0 20px;
+}
+
+main .container-music .title-recently h3{
+    padding:15px 0;
+}
+
+main .container-music .albums{
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+
+main .container-music .albums .album{
+    flex-direction:column;
+    align-items:center;
+    width:calc((100% - 10px) / 2);
+    margin-top:20px;
+}
+
+main .container-music .albums .album h4{
+    margin-top:12px;
+    font-size:12px;
+    text-align:center;
+}
+
+main .container-music .albums .album p{
+    opacity:0.4;
+    margin-top:8px;
+    font-size:8px;
+}
+
+main .container-music .albums .album img{
+    width:200px;
+    height:200px;
+}
+/* /container music */
 
 
 /***************
