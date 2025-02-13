@@ -158,6 +158,7 @@ main .menu-main{
     list-style-type:none;
     white-space: nowrap;
     margin-bottom:20px;
+
 }
 
 main .menu-main li{
@@ -165,7 +166,7 @@ main .menu-main li{
 }
 
 main .menu-main li a{
-    font-size:9px;
+    font-size:6px;
     margin-top:20px;
     justify-content:center;
     align-items:center;
@@ -210,12 +211,13 @@ main .container-music .albums{
     flex-direction:row;
     flex-wrap:wrap;
     justify-content:space-between;
+    gap:10px;
 }
 
 main .container-music .albums .album{
     flex-direction:column;
     align-items:center;
-    width:calc(100% / 2);
+    width:calc((100% - 10px) / 2);
     margin-top:20px;
 }
 
@@ -588,6 +590,10 @@ main .container-music .title-recently .albums .album .circle{
     main .menu-main li{
         width:calc(100% / 3);
     }
+
+    main .menu-main li a{
+        font-size:9px;
+    }
     /* /menu main */
 
 
@@ -616,12 +622,16 @@ main .container-music .title-recently .albums .album .circle{
     main .menu-main li{
         width:calc(100% / 5);
     }
-    /* /menu main */
 
+    main .menu-main li a{
+        font-size:11px;
+    }
+    /* /menu main */
 
     /* container music  (recently played)  */
     main .container-music .albums{
         justify-content:flex-start;
+        gap:0;
     } 
     
     main .container-music .albums .album img{
