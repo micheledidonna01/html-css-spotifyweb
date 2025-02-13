@@ -1,0 +1,525 @@
+/***************
+COMMAND
+***************/
+* {  
+    margin: 0;  
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: Montserrat, 'Helvetica Neue', sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+.d-flex{
+    display:flex;
+}
+
+.d-none{
+    display:none;
+}
+
+a{
+    text-decoration:none;
+}
+
+/***************
+ CONTAINER MENU/MAIN
+***************/
+
+.container{
+    flex-direction: row;
+}
+
+
+/***************
+ MENU
+***************/
+
+.navbar{
+    height: calc(100vh - 90px);
+    background-color:#000000;
+    align-items:center;
+    flex-direction:column;
+    padding:13px 0 20px;
+    flex-shrink:0;
+
+}
+
+/* LOGO */
+.navbar .logo-small{
+    width: 28px;
+    margin-bottom:28px;
+}
+
+/* OPZIONI MENU */
+.navbar ul {
+    list-style-type:none;
+    flex-direction:column;
+    gap:10px;
+
+}
+
+.navbar ul.option-menu li{
+    border-left:2px solid transparent;
+    padding:0 15px;
+}
+.navbar ul.option-menu li:hover{
+    border-left:2px solid #B5F843;
+}
+
+.navbar ul.option-menu li:hover a {
+   opacity:1;
+}
+
+.navbar ul li a{
+    opacity:0.4;
+}
+
+.navbar ul li a img{
+    width:25px;
+    
+}
+
+/* OTHER OPTION */
+.navbar .other-option{
+    height:100%;
+    flex-direction:column;
+    justify-content:flex-end;
+}
+
+.mod-img{
+    background-color:#666666;
+    border-radius:50%;
+}
+
+.navbar ul.other-option li{
+    border-left:2px solid transparent;
+    padding:0 15px;
+}
+
+.navbar ul.other-option li:hover{
+    border-left:2px solid #B5F843;
+}
+
+.navbar ul.other-option li:hover a{
+    color:#FFFFFF;
+    opacity:1;
+}
+
+
+
+
+/***************
+ MAIN
+***************/
+
+main{
+    height: calc(100vh - 90px);
+    width:100%;
+    background-color:#151922;
+    flex-grow:1;
+    overflow-y: scroll;
+}
+
+/* header main */
+main .header-main{
+    height:90px;
+    background-color:#0E131B;
+    align-items: center;
+    justify-content:flex-end;
+    padding:0 8px;
+    position:sticky;
+    top:0;
+    left:0;
+}
+
+main .header-main a{
+    color:#FFFFFF;
+    border:2px solid #FFFFFF;
+    border-radius:20px;
+    padding:10px 20px;
+    font-size:10px;
+}
+/* /header main */
+
+/* /menu main */
+main .menu-main{
+    justify-content:center;
+    padding:0 20px;
+    flex-wrap:wrap;
+    list-style-type:none;
+    white-space: nowrap;
+    margin-bottom:20px;
+}
+
+main .menu-main li{
+    width:calc(100% / 4);
+}
+
+main .menu-main li a{
+    font-size:9px;
+    margin-top:20px;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    color:#FFFFFF;
+}
+
+main .menu-main li a span{
+    opacity:0.3;
+}
+
+main .menu-main li a div{
+    margin-top:2px;
+    height:2px;
+    background-color:transparent;
+    width:30%;
+}
+
+main .menu-main li a .under{
+    background-color:#ADFF30;
+}
+
+main .menu-main li:hover a span{
+    opacity:1;
+}
+
+/* /menu main */
+
+
+/* container music */
+
+main .container-music{
+    color:#FFFFFF;
+    padding:0 20px;
+}
+
+main .container-music .title-recently h3{
+    padding:60px 0 10px;
+}
+
+main .container-music .albums{
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+
+main .container-music .albums .album{
+    flex-direction:column;
+    align-items:center;
+    width:calc(100% / 2);
+    margin-top:20px;
+}
+
+main .container-music .albums .album h4{
+    margin-top:12px;
+    font-size:12px;
+    text-align:center;
+}
+
+main .container-music .albums .album p{
+    opacity:0.4;
+    margin-top:8px;
+    font-size:8px;
+}
+
+main .container-music .albums .album .image-container{
+    position:relative;
+}
+
+main .container-music .albums .album .image-container .album-hover{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    display:none;
+    background-color:rgba(0, 0, 0, 0.5);
+}
+
+main .container-music .albums .album .image-container .album-hover i{
+    padding:20px;
+    font-size:30px;
+    border:10px solid #FFFFFF;
+    border-radius:50%;
+}
+
+main .container-music .albums .album .image-container:hover .album-hover{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+main .container-music .albums .album img{
+    max-width:100%;
+    max-height:100%;
+}
+/* /container music */
+
+
+/* create for you */
+
+main .container-music .title-recently > p{
+    opacity:0.4;
+    font-size:10px;
+}
+
+/* /create for you */
+
+
+
+/* popular artists */
+
+main .container-music .title-recently .albums .album .circle{
+    border-radius:50%;
+}
+/* /popular artists */
+
+
+/***************
+ PLAY BAR
+ ***************/
+
+.play-bar{
+    height: 90px;
+    background-color:#282828;
+}
+
+
+
+
+
+/***************
+****************
+ SMALL
+****************
+***************/
+
+@media screen and (min-width:576px){
+    /***************
+    MENU
+    ***************/
+
+    .container .navbar{
+        width:230px;
+        align-items:flex-start;
+    }
+
+    /* LOGO */
+    .container .navbar .logo-small{
+        display:none;
+    }
+
+    .container .navbar .logo{
+        display:block;
+        width:130px;
+        margin-bottom:20px;
+        padding-left:15px;
+    }
+
+    /* OPZIONI MENU */
+    .navbar ul.option-menu{
+        margin-bottom:40px;
+    }
+
+    .navbar ul li a{
+        color:#FFFFFF;
+    }
+
+    .navbar ul li a img{
+        width:30px;
+        vertical-align:middle;
+    }
+
+    .navbar ul li a .d-none{
+        display:inline;
+        vertical-align:middle;
+        margin-left:10px;
+    }
+
+    .navbar ul li{
+        border-left:0px;
+        font-size:12px;
+        padding:0 15px;
+    }
+
+    /* PLAYLIST */
+    .navbar .playlist{
+        display:flex;
+        flex-direction:col;
+        gap:16px;
+    }
+
+    .navbar .playlist li h3{
+        
+        color:#FFFFFF;
+    }
+
+    .navbar .playlist .big-li{
+        display:flex;
+        align-items:center;
+        gap:15px;
+    }
+
+    .navbar .playlist li span{
+        width:35px;
+        height:35px;
+        background-color: #FFFFFF;
+        opacity: 0.4;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        font-size:25px;
+       
+    }
+
+    .navbar .playlist .big-li:hover span{
+        opacity:1;
+    }
+
+    .navbar .playlist .big-li:hover a{
+        opacity:1;
+    }
+
+    .navbar .playlist li a:hover{
+        opacity:1;
+    }
+
+
+
+    /* OTHER OPTION */
+
+
+    .navbar .other-option li:first-child{
+        opacity:0.5;
+    }
+    hr.d-none{
+        display:inline-block;
+        margin-left:15px;
+    }
+
+
+    /***************
+    MAIN
+    ***************/
+
+    /* menu main */
+    main .menu-main li{
+        width:calc(100% / 3);
+    }
+    /* /menu main */
+
+
+    /* container music  (recently played)  */
+    main .container-music .albums .album img{
+        max-width:150px;
+        max-height:150px;
+    }
+    /* / container music  (recently played)  */
+}
+
+
+
+/***************
+****************
+ MEDIUM
+****************
+***************/
+
+@media screen and (min-width:768px){
+    /***************
+    MAIN
+    ***************/
+
+    /* menu main */
+    main .menu-main li{
+        width:calc(100% / 5);
+    }
+    /* /menu main */
+
+
+    /* container music  (recently played)  */
+    main .container-music .albums{
+        justify-content:flex-start;
+    } 
+    
+    main .container-music .albums .album img{
+        max-width:120px;
+        max-height:120px;
+    }
+
+    main .container-music .albums .album{
+        width:calc(100% / 4);
+    }
+    /* / container music  (recently played)  */
+}
+
+
+
+
+/***************
+****************
+ LARGE
+****************
+***************/
+
+@media screen and (min-width:992px){
+    /***************
+    MENU
+    ***************/
+
+
+    /* LOGO */
+
+
+    /* OPZIONI MENU */
+
+    .navbar ul.option-menu li:hover{
+        border-left:2px solid transparent;
+    }
+
+    /* PLAYLIST */
+
+
+
+    /* OTHER OPTION */
+    .navbar ul.other-option li:hover{
+        border-left:2px solid transparent;
+    }
+
+
+
+    /***************
+    MAIN
+    ***************/
+
+    /* menu main */
+
+    main .menu-main{
+        margin:0 auto;
+        max-width: 650px;
+    }
+
+    main .menu-main li{
+        width:calc(100% / 6);
+    }
+    /* /menu main */
+
+
+    /* container music  (recently played)  */   
+    main .container-music .albums .album img{
+        min-width:110px;
+        min-height:110px;
+    }
+    
+    main .container-music .albums .album{
+        width:calc(100% / 6);
+    }
+    /* / container music  (recently played)  */
+
+
+}
+
