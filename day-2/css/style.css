@@ -121,6 +121,9 @@ main .header-main{
     align-items: center;
     justify-content:flex-end;
     padding:0 8px;
+    position:sticky;
+    top:0;
+    left:0;
 }
 
 main .header-main a{
