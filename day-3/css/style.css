@@ -372,6 +372,10 @@ main .container-music .title-recently .albums .album .circle{
     border-radius:50%;
 }
 
+.play-bar .central-zone .hover-zone .fa-play:hover{
+    transform: scale(1.2);
+}
+
 .play-bar .central-zone .down-zone{
     flex-direction:row;
     justify-content:space-between;
